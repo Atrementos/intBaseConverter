@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+	<title>Integer Base Converter</title>
+</head>
+<body>
+	<header>
+		<div id="header" class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 navbar-brand">
+						Integer Base Converter
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<div id="main-body" class="container">
+			<div id="alertPlaceholder" class="row"></div>
+			<div class="row">
+				<form>
+					<label for="numberInput" class="col-auto form-label">
+						Enter a decimal integer to convert it to different base (2-16): 
+					</label>
+					<input class="col-auto form-control" type="number" id="numberInput" name="numberInput" placeholder="Integer goes here..." min="0">
+					<select id="selectBase" class="form-select">
+						<option selected value="1">All bases (2-16)</option>
+						<option value="2">2 (Binary)</option>
+						<option value="3">3 (Ternary)</option>
+						<option value="4">4 (Quaternary)</option>
+						<option value="5">5 (Quinary)</option>
+						<option value="6">6 (Senary)</option>
+						<option value="7">7 (Septenary)</option>
+						<option value="8">8 (Octal)</option>
+						<option value="9">9 (Nonary)</option>
+						<option value="11">11 (Undecimal)</option>
+						<option value="12">12 (Duodecimal)</option>
+						<option value="13">13 (Tridecimal)</option>
+						<option value="14">14 (Tetradecimal)</option>
+						<option value="15">15 (Pentadecimal)</option>
+						<option value="16">16 (Hexadecimal)</option>
+					</select>
+					<button id="convertButton" class="btn btn-secondary" type="button" onclick="refreshTable()">Convert</button>
+				</form>
+				<div id="resultInt" class="d-none">
+					
+				</div>
+				<table id="tableBases" class="table col-12 col-md-6 d-none">
+					<thead>
+						<tr>
+							<th scope="col">Base</th>
+							<th scope="col">Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">2</th>
+							<td id="base2">0</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td id="base3">0</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td id="base4">0</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td id="base5">0</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td id="base6">0</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td id="base7">0</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td id="base8">0</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td id="base9">0</td>
+						</tr>
+						<tr>
+							<th scope="row">10</th>
+							<td id="base10">0</td>
+						</tr>
+						<tr>
+							<th scope="row">11</th>
+							<td id="base11">0</td>
+						</tr>
+						<tr>
+							<th scope="row">12</th>
+							<td id="base12">0</td>
+						</tr>
+						<tr>
+							<th scope="row">13</th>
+							<td id="base13">0</td>
+						</tr>
+						<tr>
+							<th scope="row">14</th>
+							<td id="base14">0</td>
+						</tr>
+						<tr>
+							<th scope="row">15</th>
+							<td id="base15">0</td>
+						</tr>
+						<tr>
+							<th scope="row">16</th>
+							<td id="base16">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<i class="bi-github" role="img" aria-label="Github"></i>
+					<a href="https://www.github.com/atrementos" target="_blank" id="gitLink">Github</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

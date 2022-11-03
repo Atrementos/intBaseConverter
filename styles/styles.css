@@ -1,0 +1,89 @@
+#header {
+	background-color: #DCDCDC;
+}
+
+.navbar .navbar-brand {
+	font-weight: bold;
+	font-size: 1.7em;
+}
+
+#footer {
+	background-color: #C8C8C8;
+	min-height: 3em;
+	font-size: 1.2em;
+	margin: 0;
+	/*padding: 0;*/
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer a {
+	margin: 50px 0px;
+}
+
+#convertButton {
+	margin: 15px 0px;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+#tableBases {
+	text-align: center;
+}
+
+#main-body {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#main-body form {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#alertNull {
+	margin-bottom: 5px;
+}
+
+#alertDismiss {
+	float: right;
+}
+
+#gitLink {
+	text-decoration: none; 
+	color: black
+}
+
+#resultInt {
+	margin-bottom: 20px;
+	font-size: 1.4em;
+}
+
+form input {
+	margin-bottom: 4px;
+}
+
+thead {
+	background-color: #d9d9d9;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table {
+	table-layout: fixed;
+}
+
+thead th:nth-child(1) {
+	width: 40%;
+}
+
+thead th:nth-child(2) {
+	width: 60%;
+}
